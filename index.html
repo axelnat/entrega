@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilos.css" rel="stylesheet">
+        <link href="scripts.js">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+<body>
+<div class="container" > 
+<div class="row"> 
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid ">
+    <a class="navbar-brand " href="#">Dali.Pel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active boton" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link boton" href="https://www.instagram.com/dali.pel/" target="_blank">Instagram</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle boton" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Compartir
+          </a>
+          <ul class="dropdown-menu mx-auto">
+            <li><a class="dropdown-item" href="https://api.whatsapp.com/send/?phone=%2B5493815516615&text&type=phone_number&app_absent=0" target="_blank">Whatsappeanos</a></li>
+            <li><a class="dropdown-item" href="#turno">Saca tu turno aqui</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://goo.gl/maps/Xudaes1DmMfPbgWUA">Cómo llegar</a></li>
+          </ul>
+        </li>
+    
+       
+      
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="row"> 
+  <div class="col-sm-3">
+    <div class="card ">
+      <h5 class="card-header">Tarifas</h5>
+      <div class="card-body">
+        
+        <p class="card-text"> Seleccione una Opcion y oprima "+"</p>
+        <div>
+          <input class="form-control operadorA" type="text"  id="operadorA" name="" value="">
+        </div>
+        <div>
+          <input class="form-control operadorB" type="number" id="operadorB" name="" value="">
+        </div>
+        
+        <div>
+          <button class="btn btn-primary" onclick="operacion('+')"id="+" >+</button>
+          <!-- esto es un comentario
+          <button class="btn btn-primary" onclick="operacion('-')"id="-" >-</button>
+          <button class="btn btn-primary" onclick="operacion('*')"id="*" >*</button>
+          <button class="btn btn-primary" onclick="operacion('/')"id="/" >/</button>
+           --> 
+        </div>                
+        <div>          
+          <button class="btn btn-primary" onclick="boton(1200)" id="1200" >1 Corte Caballeros</button>
+          <button class="btn btn-primary" onclick="boton(600)" id="600" >2 Barba</button>
+          <button class="btn btn-primary" onclick="boton(300)" id="300" >3 Lavado </button>
+          <button class="btn btn-primary" onclick="boton(1800)" id="1800" >4 Corte a Domicilio</button>
+          <button class="btn btn-primary" onclick="boton(1000)" id="1000" >5 Corte Niño</button>
+          <button class="btn btn-primary" onclick="boton(1300)" id="1300" >6 Corte Damas</button>
+          
+          <button class="btn btn-primary" onclick="resultado()"id="=" >=</button>
+          <button class="btn btn-primary" onclick="borrar()"id="C" >Borrar</button>
+          <!-- button class="btn btn-primary" onclick="boton('.')"id="." >.</button>  --> 
+        </div>
+      
+        <h5 class="card-title">Tarifa de Cortes</h5>
+      </div>
+    </div>
+  </div>  
+</div>
+<div class="row">
+  
+</div>
+
+<h1 class="animate__animated animate__hinge animate__infinite"> Clientes a la Moda </h1>
+  
+ <div class="w-50 mx-auto">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/3.jpg" class="d-block w-80" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/1.jpg" class="d-block w-80" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/2.jpg" class="d-block w-80" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </div>
+
+</div>
+<div class="row">
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      ¿Qué es el corte low fade? Se trata de un tipo de corte de pelo degradado, generalmente masculino, donde el cabello está muy recortado en la nuca, patillas y laterales de la cabeza, volviéndose más largo en la parte superior de la misma.
+    </div>
+    <div class="col">
+      La barba de tres días o de estilo desalineado es una excelente forma de mantener un estilo masculino rudo sin dejarse crecer la barba completa. Podés lograr este estilo y conservar un aspecto agradable.
+    </div>
+    <div class="col">
+      Hacemos los mejores cortes de pelo para niños con los looks más modernos para que seas un papá o mamá inigualable.
+    </div>
+  </div>
+</div>
+
+
+<h4>Puedes sacar tu turno aqui</h4>
+
+<div>
+  <form class="container">
+    <div>
+      <label for="nombreInput" id="turno"> Nombre  </label>
+    </div>
+    <div>
+      <input class="form-control" type="text" id="nombreInput" name="" value="">  
+    </div>
+    <div>
+      <label for="edadInput"> El Corte  </label>
+    <div>
+      <input class="form-control" type="number" id="edadInput" name="" value="">
+    </div>
+    <div>
+      <button class="btn btn-primary" type="submit" onclick="convertir()"> Consultá la tarifa </button>
+    </div>
+        
+    <div>
+      <label for="#"> Chekbox  </label>
+    <div>
+      <input type="checkbox" class="form-check" id="#" name="" value="">
+    </div>
+    <div>
+      <input type="submit" class="btn btn-outline-success" name="" value="Enviar">
+    </div>
+      <label for="#"> Ingrese un comentario  </label>
+    </div>
+    <div>
+      <textarea rows="" cols=""> </textarea>
+    </div>
+  </form>
+
+</div>
+
+<h1 id="">  </h1> 
+
+<h4> Ubicacion local</h4>
+<div id="mapa">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.6573579556502!2d-65.2479720843825!3d-26.819036695764428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cf0976fd221%3A0xa1ba7c5863d7f001!2sPcia%20de%20Mendoza%203335%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1678834372192!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src=scripts.js ></script>    
+</body>
+</html>

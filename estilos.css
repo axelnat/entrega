@@ -1,0 +1,33 @@
+
+   
+
+header {
+    background-color: black;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    
+}
+nav {
+    background: rgb(131,58,180);
+    background: linear-gradient(342deg, rgba(131,58,180,1) 5%, rgba(253,29,29,1) 54%, rgba(252,176,69,1) 80%); 
+    }
+.boton:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+div #mapa { 
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
